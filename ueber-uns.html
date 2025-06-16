@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ueber-uns</title>
+<!-- Horizontale Nav-Bar -->
+      <style>
+    /* Styling der Navigation */
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none; /* Entfernt die Aufzählungszeichen */
+      margin: 0;
+      padding: 0;
+      display: flex; /* Elemente horizontal anordnen */
+    }
+
+    nav ul li {
+      margin-right: 20px; /* Abstand zwischen den Links */
+    }
+
+    nav ul li a {
+      text-decoration: none; /* Entfernt die Unterstreichung */
+      color: white;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757; /* Hover-Effekt */
+      border-radius: 5px;
+    }
+
+    header {
+    padding: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+  </style>
+</head>
+<body>
+        <!-- Kopfbereich -->
+    <header>
+      <div class="header-top">
+        <h1>Willkommen bei "Zum Goldenen Hirsch"</h1>
+        <img src="./static/images/goldenerhirschMN.jpg" width="150" alt="Logo" class="logo">
+        </div>
+        <p>~Ihr Restaurant in gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
+        <nav area-label="Hauptnavigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ueber-uns.html" aria-current="page">Über uns</a></li>
+                <li><a href="speisekarte.html">Speisekarte</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="reservierung.html">Reservierung</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hauptbereich/Inhalt -->
+      <main>
+  <section class="ueber-uns">
+  <h2>Unsere Geschichte</h2>
+  <p>Seit über 70 Jahren stehen wir für norddeutsche Gastlichkeit, regionale Wildspezialitäten und frischen Fisch aus der Region. Werfen Sie einen Blick auf unsere Reise:</p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>1952 – Gründung des Gasthauses</h3>
+      <p>Am Rande des Elbmoores eröffnet Wilhelm Martens das Gasthaus „Zum Goldenen Hirsch“. Anfangs als Treffpunkt für Jäger und Fischer gedacht, entwickelte sich das Haus schnell zum Geheimtipp für Wildgerichte aus eigener Jagd.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>1975 – Übergabe an die nächste Generation</h3>
+      <p>Tochter Ingrid übernimmt mit Ehemann Heinrich den Betrieb. Die Speisekarte wird um frische Nordsee-Fischgerichte erweitert: Aal, Scholle, Dorsch – fangfrisch auf den Tisch.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>1990 – Tradition trifft Moderne</h3>
+      <p>Nach einer umfangreichen Renovierung wird das Restaurant um einen Wintergarten erweitert. Die Speisekarte bleibt klassisch norddeutsch, erhält aber moderne Akzente wie Wild-Burger und Fischvariationen mit saisonalem Gemüse.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2005 – Regionale Partnerschaften</h3>
+      <p>Das Restaurant geht feste Kooperationen mit regionalen Jägern, Fischern und Bauern ein. Nachhaltigkeit und Herkunft der Zutaten rücken in den Mittelpunkt der Küche.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2022 – 70 Jahre „Zum Goldenen Hirsch“</h3>
+      <p>Das Jubiläum wird mit einem großen Dorffest gefeiert. Gäste aus ganz Norddeutschland reisen an. Die nächste Generation steht schon bereit, die Geschichte fortzuschreiben.</p>
+    </div>
+    </div>
+  </section>
+
+  </main>
+  <hr>
+    <!-- Footer -->
+  <footer>
+    <p>&copy;Zum Goldenen Hirsch. Alle Rechte vorbehalten.</p>
+  </footer>
+        
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+<!-- Horizontale Nav-Bar -->
+      <style>
+    /* Styling der Navigation */
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none; /* Entfernt die Aufzählungszeichen */
+      margin: 0;
+      padding: 0;
+      display: flex; /* Elemente horizontal anordnen */
+    }
+
+    nav ul li {
+      margin-right: 20px; /* Abstand zwischen den Links */
+    }
+
+    nav ul li a {
+      text-decoration: none; /* Entfernt die Unterstreichung */
+      color: white;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757; /* Hover-Effekt */
+      border-radius: 5px;
+    }
+
+    header {
+    padding: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+  </style>
+</head>
+
+<body>
+        <!-- Kopfbereich -->
+<header>
+    <div class="header-top">
+        <h1>Willkommen bei "Zum Goldenen Hirsch"</h1>
+        <img src="./static/images/goldenerhirschMN.jpg" width="150" alt="Logo" class="logo">
+    </div>
+    <p>~Ihr Restaurant in gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
+
+    <nav aria-label="Hauptnavigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="speisekarte.html">Speisekarte</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="reservierung.html">Reservierung</a></li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+    <!-- Hauptbereich -->
+
+    <main>
+    <section class="willkommen">
+      <h2>Herzlich willkommen in unserem Traditions-Gasthaus</h2>
+      <p>Genießen Sie norddeutsche Gastlichkeit seit 1952 – mit traditionellen Wildgerichten aus eigener, heimischer Jagd und fangfrischem Fisch aus der Region. Ob gemütliches Abendessen, Familienfeier oder Event: Bei uns entdecken Sie die norddeutsche Küche und Gastlichkeit in herzlicher Atmosphäre neu!</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy;Zum Goldenen Hirsch 1952. Alle Rechte vorbehalten.</p>
+  </footer>
+    
+    
+</body>
+</html>

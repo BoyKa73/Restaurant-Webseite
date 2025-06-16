@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+<!-- Horizontale Nav-Bar -->
+      <style>
+    /* Styling der Navigation */
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none; /* Entfernt die Aufzählungszeichen */
+      margin: 0;
+      padding: 0;
+      display: flex; /* Elemente horizontal anordnen */
+    }
+
+    nav ul li {
+      margin-right: 20px; /* Abstand zwischen den Links */
+    }
+
+    nav ul li a {
+      text-decoration: none; /* Entfernt die Unterstreichung */
+      color: white;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757; /* Hover-Effekt */
+      border-radius: 5px;
+    }
+
+    header {
+    padding: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+  </style>
+</head>
+<body>
+        <!-- Kopfbereich -->
+    <header>
+      <div class="header-top">
+        <h1>Willkommen bei "Zum Goldenen Hirsch" </h1>
+        <img src="./static/images/goldenerhirschMN.jpg" width="150" alt="Logo" class="logo">
+        </div>
+        <p>~Ihr Restaurant in gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
+        <nav area-label="Hauptnavigation">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="speisekarte.html">Speisekarte</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+                <li><a href="reservierung.html">Reservierung</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- FORMULAR/ Hauptbereich -->
+     <main>
+        <section>
+    <h2>Kontaktformular</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend><b>Persönliche Daten</b></legend>
+            <label for="name">Name:</label>
+            <input required type="text" name="name" id="name" placeholder="Max Mustermann" ><br><br>
+            
+            <label for="email">Email:</label>
+            <input required type="email" name="email" id="email" placeholder="max@mustermann.de"><br><br>
+            
+            <label for="phone">TelNr:</label>
+            <input required type="tel" name="phone" id="phone" placeholder="+40 (0)123 4567"><br><br>
+            
+            <!-- <label for="request-type">Anfragewunsch:</label>
+            <input required type="radio" name="request-type" id="request-type" "><br><br> -->
+            <label for="request-type">Deine Nachricht an uns</label>
+            <select name="request-type" id="request-type">
+                <option value="">Bitte wähle deine Option</option>
+                <option value="anfrage">Anfrage</option>
+                <option value="event">Event</option>
+                <option value="wuensche">Wünsche/Lob/Kritik</option>
+                <option value="sonstiges">Sonstiges</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><b>Nachricht</b></legend>
+            <label for="message">Deine Nachricht an uns:</label><br>
+            <textarea name="message" id="message" rows="4" cols="50"></textarea><br><br>   
+        </fieldset>
+        <br>
+        <input type="submit" value="Absenden">
+        </form>
+      </section>
+    </main>
+
+      <!-- Footer -->
+  <footer>
+    <p>&copy;Zum Goldenen Hirsch 1952. Alle Rechte vorbehalten.</p>
+  </footer>
+    
+
+</body>
+
+</html>
