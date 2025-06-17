@@ -1,0 +1,43 @@
+/* Styling der Menükarte */
+.gericht-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.gericht-bild {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.gericht-text {
+  flex: 1;
+}
+
+.gericht-text h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preis {
+  font-weight: normal;
+  color: #555;
+  margin-left: 1rem;
+}
+
+.gericht-text h5 {
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+.gericht-text h6 {
+  margin: 0;
+  color: #888;
+  font-weight: normal;
+}
+

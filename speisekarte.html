@@ -50,6 +50,40 @@
     width: 150px;
     height: auto;
 }
+/* Styling der Menükarte */
+.gericht-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .gericht-bild {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .gericht-text {
+    flex: 1;
+  }
+
+  .gericht-text h3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .gericht-text h5 {
+    margin: 0.3rem 0;
+    color: #444;
+  }
+
+  .gericht-text h6 {
+    margin: 0;
+    font-weight: normal;
+    color: #888;
+  }
   </style>
 </head>
 <body>
@@ -82,33 +116,52 @@
           <h2>Unsere Vorspeisen-Karte</h2>
 
         <fieldset>
-        <legend><b> #10</b></legend>  
-          <h3>Tomaten-Bruscette .............................  7,90€</h3>
-          <h5>Tomaten-Ragout auf geröstetem Ciabatta-Baguettes, 3 Stck.</h5>
-          <h6>A, G</h6>
+        <legend><b> #10</b></legend>
+                   <div class="gericht-box">
+            <img src="static/images/GHBruscette.jpg" width=150 alt="Tomaten-Bruscette" class="gericht-bild">
+            <div class="gericht-text">  
+            <h3>Tomaten-Bruscette <span class="preis"> 7,90€</span></h3>
+            <h5>Tomaten-Ragout auf geröstetem Ciabatta-Baguettes, 3 Stck.</h5>
+            <h6>A, G</h6>
+            </div>
+            </div>
         </fieldset>
 
         <fieldset>
-        <legend><b> #11</b></legend>  
-          <h3>Krabbensuppe ......................................  8,90€</h3>
-          <h5>Cremesuppe mit reichlich Nordsee-Krabben-Einlage.</h5>
-          <h6>A, D, G</h6>
+        <legend><b> #11</b></legend>
+            <div class="gericht-box">
+            <img src="static/images/GHKrabbensuppe.jpg" width=150 alt="Krabbensuppe" class="gericht-bild">
+            <div class="gericht-text">  
+            <h3>Krabbensuppe <span class="preis"> 8,90€</span></h3>
+            <h5>Cremesuppe mit reichlich Nordsee-Krabben-Einlage.</h5>
+            <h6>A, D, G</h6>
+            </div>
+            </div>
         </fieldset>
 
         <fieldset>
-        <legend><b> #12</b></legend>  
-          <h3>Caprese-Salat ........................................  5,90€</h3>
-          <h5>Salat aus Cocktail-Tomaten,Avocado und Mozarella-Bällchen</h5>
-
-          <h6>G</h6>
+        <legend><b> #12</b></legend>
+              <div class="gericht-box">
+            <img src="static/images/GHCaprese.jpg" width=150 alt="Caprese" class="gericht-bild">
+            <div class="gericht-text">  
+            <h3>Caprese-Salat <span class="preis"> 5,90€</span></h3>
+            <h5>Salat aus Cocktail-Tomaten,Avocado und Mozarella-Bällchen</h5>
+            <h6>G</h6>
+            </div>
+            </div>
         </fieldset>
 
         <fieldset>
-        <legend><b> #13</b></legend>  
-          <h3>Petersilien-Forellen-Linsensalat ............9,90€</h3>
-          <h5>Rote Linsen in einer Himbeer-Vinaigrette auf Romana-Salat, </h5>
-          <h5>Paprika und Staudensellerie. Belegt mit geräucherter Forelle</h5>
-          <h6>D</h6>
+        <legend><b> #13</b></legend>
+             <div class="gericht-box">
+            <img src="static/images/GHForellensalat.jpg" width=150 alt="Forellensalat" class="gericht-bild">
+            <div class="gericht-text">   
+            <h3>Petersilien-Forellen-Linsensalat <span class="preis">9,90€</span></h3>
+            <h5>Rote Linsen in einer Himbeer-Vinaigrette auf Romana-Salat, </h5>
+            <h5>Paprika und Staudensellerie. Belegt mit geräucherter Forelle</h5>
+            <h6>D</h6>
+            </div>
+          </div>
         </fieldset>
     </section>
     </fieldset>
@@ -118,34 +171,51 @@
       <fieldset class="Unsere Haupt-Menüs">
           <h2>Unsere Haupt-Menüs</h2>
 
+      <fieldset>
+        <legend><b>#20</b></legend>
+            <div class="gericht-box">
+            <img src="static/images/GHLabskaus.jpg" width=150 alt="Labskaus" class="gericht-bild">
+            <div class="gericht-text">
+            <h3>Labskaus mit Spiegelei & Bratkartoffeln <span class="preis">12,90€</span></h3>
+            <h5>Rote Bete, Corned Beef, Gewürzgurken, Matjesfilet, Zwiebel & Kartoffeln</h5>
+            <h6>D</h6>
+            </div>
+            </div>
+      </fieldset>
+
         <fieldset>
-        <legend><b> #20</b></legend>  
-          <h3>Labskaus mit Spiegelei & Bratkartoffeln ....................................12,90€</h3>
-          <h5>Rote-Bete,Corned-Beef,Gewürzgurken,Matjesfilet,Zwiebel&Kartoffeln</h5>
-          <h6>D</h6>
+        <legend><b> #21</b></legend> 
+            <div class="gericht-box">
+            <img src="static/images/GHRehschulter.jpg" width=150 alt="Rehschulter" class="gericht-bild">
+            <div class="gericht-text"> 
+            <h3>Rehschulter mit Roter Bete und Thymian-Kartoffelstampf <span class="preis">29,50€</span></h3>
+            <h5>Regionales Reh-Fleisch, Rote-Bete gegart und glasiert mit Himbeeressig</h5>
+            <h6>A, G</h6>
+            </div>
+        </div>
         </fieldset>
 
         <fieldset>
-        <legend><b> #21</b></legend>  
-          <h3>Rehschulter mit Roter Bete und Thymian-Kartoffelstampf ......29,50€</h3>
-          <h5>Regionales Reh-Fleisch, Rote-Bete gegart und glasiert mit Himbeeressig</h5>
-          <h6>A, G</h6>
+        <legend><b> #22</b></legend> 
+            <div class="gericht-box">
+            <img src="static/images/GHRehkebab.jpg" width=150 alt="Rehkebab" class="gericht-bild">
+            <div class="gericht-text"> 
+            <h3>Reh-Kebab mit Naan-Brot und Rotkohl-Salat <span class="preis"> 22,40€</span></h3>
+            <h5>Pikantes Kebab aus Reh-Hackfleisch umschlungen von softem Naan-Brot, dazu Rotkohlsalat und Joghurt-Dip</h5>
+            <h6>G</h6>
+            </div>
+        </div>
         </fieldset>
 
         <fieldset>
-        <legend><b> #22</b></legend>  
-          <h3>Reh-Kebab mit Naan-Brot und Rotkohl-Salat ........................... 22,40€</h3>
-          <h5>Pikantes Kebab aus Reh-Hackfleisch umschlungen von softem Naan-Brot, dazu Rotkohlsalat und Joghurt-Dip</h5>
-
-          <h6>G</h6>
-        </fieldset>
-
-        <fieldset>
-        <legend><b> #23</b></legend>  
-          <h3>Spargel-Lachs-Gratin.....................................................................19,90€</h3>
-          <h5>Frischer Spargel auf Kartoffelbett,mit geräuchertem Lachs und Käse bestreut, überbacken </h5>
-          <h5>Paprika und Staudensellerie. Belegt mit geräucherter Forelle</h5>
-          <h6>A, C, D, G</h6>
+        <legend><b> #23</b></legend> 
+              <div class="gericht-box">
+            <img src="static/images/GHSpargel-Lachs-Gratin.jpg" width=150 alt="Spargel-Lachs-Gratin" class="gericht-bild">
+            <div class="gericht-text">  
+            <h3>Spargel-Lachs-Gratin<span class="preis">19,90€</span></h3>
+            <h5>Frischer Spargel auf Kartoffelbett,mit geräuchertem Lachs und Käse bestreut, überbacken </h5>
+            <h5>Paprika und Staudensellerie. Belegt mit geräucherter Forelle</h5>
+            <h6>A, C, D, G</h6>
         </fieldset>
     </section>
     </fieldset>
