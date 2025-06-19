@@ -3,67 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ueber-uns</title>
-<!-- Horizontale Nav-Bar -->
+    <title>Historie</title>
+    <link rel="stylesheet" href="style.css">
+  
       <style>
-    /* Styling der Navigation */
-    nav {
-      background-color: #333;
-      padding: 10px;
-    }
 
-    nav ul {
-      list-style-type: none; /* Entfernt die Aufzählungszeichen */
-      margin: 0;
-      padding: 0;
-      display: flex; /* Elemente horizontal anordnen */
-    }
-
-    nav ul li {
-      margin-right: 20px; /* Abstand zwischen den Links */
-    }
-
-    nav ul li a {
-      text-decoration: none; /* Entfernt die Unterstreichung */
-      color: white;
-      font-weight: bold;
-      padding: 5px 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #575757; /* Hover-Effekt */
-      border-radius: 5px;
-    }
-
-    header {
-    padding: 20px;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    width: 150px;
-    height: auto;
-}
   </style>
 </head>
 <body>
+  <div class="page-grid">
         <!-- Kopfbereich -->
     <header>
+      <section class="antik-karte">
       <div class="header-top">
-        <h1>Willkommen bei "Zum Goldenen Hirsch"</h1>
+        <h1>Zum Goldenen Hirsch</h1>
         <img src="./static/images/goldenerhirschMN.jpg" width="150" alt="Logo" class="logo">
         </div>
-        <p>~Ihr Restaurant in gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
+        <p>~Ihr Restaurant mit gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
         <nav area-label="Hauptnavigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="ueber-uns.html" aria-current="page">Über uns</a></li>
+                <li><a href="ueber-uns.html" aria-current="page">Historie</a></li>
                 <li><a href="speisekarte.html">Speisekarte</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
@@ -71,11 +31,13 @@
                 
             </ul>
         </nav>
+        </section>
+        </div>
     </header>
 
     <!-- Hauptbereich/Inhalt -->
       <main>
-  <section class="ueber-uns">
+  <section class="antik-karte">
   <h2>Unsere Geschichte</h2>
   <p>Seit über 70 Jahren stehen wir für norddeutsche Gastlichkeit, regionale Wildspezialitäten und frischen Fisch aus der Region. Werfen Sie einen Blick auf unsere Reise:</p>
 
@@ -108,10 +70,12 @@
   </section>
 
   </main>
-  <hr>
+
     <!-- Footer -->
   <footer>
-    <p>&copy;Zum Goldenen Hirsch. Alle Rechte vorbehalten.</p>
+    <p>Dienstags- Sonntags 17 - 22 Uhr</p>
+    <p>Montags Ruhetag</p>
+    <p>&copy;Zum Goldenen Hirsch 1952. Alle Rechte vorbehalten.</p>
   </footer>
         
 </body>

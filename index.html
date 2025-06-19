@@ -4,88 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-<!-- Horizontale Nav-Bar -->
-      <style>
-    /* Styling der Navigation */
-    nav {
-      background-color: #333;
-      padding: 10px;
-    }
+       <link rel="stylesheet" href="style.css">
+   <style> 
 
-    nav ul {
-      list-style-type: none; /* Entfernt die Aufzählungszeichen */
-      margin: 0;
-      padding: 0;
-      display: flex; /* Elemente horizontal anordnen */
-    }
-
-    nav ul li {
-      margin-right: 20px; /* Abstand zwischen den Links */
-    }
-
-    nav ul li a {
-      text-decoration: none; /* Entfernt die Unterstreichung */
-      color: white;
-      font-weight: bold;
-      padding: 5px 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #575757; /* Hover-Effekt */
-      border-radius: 5px;
-    }
-
-    header {
-    padding: 20px;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    width: 150px;
-    height: auto;
-}
   </style>
 </head>
 
 <body>
+  <div class="page-grid">
         <!-- Kopfbereich -->
 <header>
+  <section class="antik-karte">
     <div class="header-top">
-        <h1>Willkommen bei "Zum Goldenen Hirsch"</h1>
+        <h1>Zum Goldenen Hirsch</h1>
         <img src="./static/images/goldenerhirschMN.jpg" width="150" alt="Logo" class="logo">
     </div>
-    <p>~Ihr Restaurant in gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
+    <p>~Ihr Restaurant mit gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
 
     <nav aria-label="Hauptnavigation">
         <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="ueber-uns.html">Historie</a></li>
             <li><a href="speisekarte.html">Speisekarte</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
             <li><a href="reservierung.html">Reservierung</a></li>
         </ul>
     </nav>
-    <hr>
+     <hr>
+  </section>
+    </div>
 </header>
 
     <!-- Hauptbereich -->
 
     <main>
-    <section class="willkommen">
+    <section class="antik-karte">
       <h2>Herzlich willkommen in unserem Traditions-Gasthaus</h2>
       <p>Genießen Sie norddeutsche Gastlichkeit seit 1952 – mit traditionellen Wildgerichten aus eigener, heimischer Jagd und fangfrischem Fisch aus der Region. Ob gemütliches Abendessen, Familienfeier oder Event: Bei uns entdecken Sie die norddeutsche Küche und Gastlichkeit in herzlicher Atmosphäre neu!</p>
+    
+
+      <!-- Haupt-Features -->
+  <section class="features-section">
+    <div class="card-container">
+
+      <!-- Karte 1 -->
+      <div class="card">
+        <h3>🍽️</h3>
+        <h3>Catering-Anfrage</h3>
+        <p>09876- 123456</p>
+      </div>
+
+      <!-- Karte 2 -->
+      <div class="card">
+        <h3>📞</h3>
+        <h3>Kontakt</h3>
+        <p>01234- 567890</p>
+      </div>
+
+      <!-- Karte 3 -->
+      <div class="card">
+        <h3>🎆</h3>
+        <h3>Events</h3>
+        <p>Sichern Sie sich Ihren Platz</p>
+      </div>
+
+    </div>
     </section>
+  </section>
   </main>
 
   <!-- Footer -->
   <footer>
+    <p>Dienstags- Sonntags 17 - 22 Uhr</p>
+    <p>Montags Ruhetag</p>
     <p>&copy;Zum Goldenen Hirsch 1952. Alle Rechte vorbehalten.</p>
   </footer>
     

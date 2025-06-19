@@ -1,3 +1,120 @@
+/* <!-- Horizontale Nav-Bar --> */
+
+    /* Styling der Navigation */
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none; /* Entfernt die Aufzählungszeichen */
+      margin: 0;
+      padding: 0;
+      display: flex; /* Elemente horizontal anordnen */
+    }
+
+    nav ul li {
+      margin-right: 20px; /* Abstand zwischen den Links */
+    }
+
+    nav ul li a {
+      text-decoration: none; /* Entfernt die Unterstreichung */
+      color: white;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757; /* Hover-Effekt */
+      border-radius: 5px;
+    }
+
+    header {
+    padding: 20px;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px; /* Rundet alle Ecken gleichmäßig ab */
+}
+
+h1 {
+  font-size: 2em;
+}
+
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.main-nav-list {
+  display: flex;             /* Elemente in eine Reihe anordnen */
+  list-style: none;          /* Aufzählungszeichen entfernen */
+  padding: 0;                /* Standard-Abstand entfernen */
+  margin: 0;                 /* Ggf. auch Außenabstand entfernen */
+  gap: 20px;                 /* Abstand zwischen den Elementen */
+  justify-content: center;   /* Elemente zentrieren (alternativ: space-between) */
+  align-items: center;       /* Vertikale Zentrierung (optional) */
+}
+
+
+/* Styling der Karten */
+.card-container {
+display: flex;
+gap: 16px; /* Abstand zwischen den Karten */
+flex-wrap: wrap; /* Erlaubt Karten, in die nächste Zeile zu springen */
+}
+
+/* ------ Allg.Styling Feature-Sektion----- */
+.features-section {
+  padding: 40px 20px;
+  background-color: none; 
+}
+
+.features-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ------Layout für die Karten----- */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* Damit es auch auf kleinen Bildschirmen gut aussieht */
+}
+
+/* ----- Styling einzelne Karte ----- */
+.card {
+  background-color: none;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(221, 221, 221, 0.1);
+  text-align: center;
+  width: 150px; /* Feste Breite für gleichmäßige Karten */
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Schwebender Effekt beim Hover */
+  box-shadow: 0 8px 16px rgba(203, 211, 199, 0.2);
+}
+
+/* ------ Icon-Größe anpassen ----- */
+.card h3:first-child {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
 /* Styling der Menükarte */
 .gericht-box {
   display: flex;
@@ -25,9 +142,10 @@
 }
 
 .preis {
-  font-weight: normal;
-  color: #555;
+  font-weight: bold !important;
+  color: #555;              /* Klar lesbar */
   margin-left: 1rem;
+  /* font-size: 1.1rem;        Optional größer */
 }
 
 .gericht-text h5 {
@@ -40,4 +158,178 @@
   color: #888;
   font-weight: normal;
 }
+
+/* Styling Menükarte Text */
+    .hauptspeisen {
+      max-width: 800px;
+      margin: 0 auto ;
+      padding: 1rem;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .gericht {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+      gap: 1rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+
+    .gericht-bild {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .gericht-text {
+      flex: 1;
+    }
+
+    .gericht-text h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .gericht-text .preis {
+      font-weight: normal;
+      margin-left: auto;
+      white-space: nowrap;
+      color: #555;
+    }
+
+    .gericht-text h5 {
+      margin: 0.3rem 0;
+      color: #444;
+    }
+
+    .gericht-text h6 {
+      margin: 0;
+      font-weight: normal;
+      color: #888;
+    }
+
+        /* Navigation */
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    header {
+      padding: 20px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      width: 150px;
+      height: auto;
+    }
+
+    /* Timeline-Section */
+
+.ueber-uns {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.timeline {
+  border-left: 3px solid #b48c4a;
+  padding-left: 1.5rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "•";
+  position: absolute;
+  left: -1.2rem;
+  top: 0;
+  font-size: 1.5rem;
+  color: #b48c4a;
+}
+
+.timeline h3 {
+  margin: 0 0 0.5rem;
+  color: #2c3e50;
+}
+
+.timeline p {
+  margin: 0;
+  color: #444;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 30px;
+  padding: 20px;
+  background: none;
+  min-height: 100vh;
+}
+
+        /* Stil für antike Karte */
+    .antik-karte {
+      background: linear-gradient(#f7f0c3, #e4d8a2); /* Vergilbtes Papier */
+      color: #4b3e2d;
+      padding: 40px;
+      margin: 40px;
+      max-width: 800px;
+      font-family: 'Georgia', serif;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      border: 1px solid #a48750;
+      border-radius: 20px;
+      position: relative;
+      clip-path: polygon(
+        10% 0%, 90% 0%, 100% 10%, 100% 90%,
+        90% 100%, 10% 100%, 0% 90%, 0% 10%
+      );
+      background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+                        radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+      background-size: 10px 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #888;
+    }
+
 

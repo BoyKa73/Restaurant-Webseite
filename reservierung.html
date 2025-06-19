@@ -4,66 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservierung</title>
-<!-- Horizontale Nav-Bar -->
+    <link rel="stylesheet" href="style.css">
       <style>
-    /* Styling der Navigation */
-    nav {
-      background-color: #333;
-      padding: 10px;
-    }
 
-    nav ul {
-      list-style-type: none; /* Entfernt die Aufzählungszeichen */
-      margin: 0;
-      padding: 0;
-      display: flex; /* Elemente horizontal anordnen */
-    }
-
-    nav ul li {
-      margin-right: 20px; /* Abstand zwischen den Links */
-    }
-
-    nav ul li a {
-      text-decoration: none; /* Entfernt die Unterstreichung */
-      color: white;
-      font-weight: bold;
-      padding: 5px 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #575757; /* Hover-Effekt */
-      border-radius: 5px;
-    }
-
-    header {
-    padding: 20px;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    width: 150px;
-    height: auto;
-}
   </style>
 </head>
 <body>
+  <div class="page-grid">
         <!-- Kopfbereich -->
     <header>
+      <section class="antik-karte">
       <div class="header-top">
-        <h1>Willkommen bei "Zum Goldenen Hirsch" </h1>
+        <h1>Zum Goldenen Hirsch </h1>
         <img src="./static/images/goldenerhirschMN.jpg" width="150" alt="Logo" class="logo">
         </div>
-        <p>~Ihr Restaurant in gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
+        <p>~Ihr Restaurant mit gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
         <nav area-label="Hauptnavigation">
             <ul>
                 <li><a href="index.html" >Home</a></li>
-                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="ueber-uns.html">Historie</a></li>
                 <li><a href="speisekarte.html">Speisekarte</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
@@ -71,30 +30,32 @@
                 
             </ul>
         </nav>
+        </section>
+        </div>
     </header>
 
     <!-- Hauptbereich/Inhalt -->
      <main>
-    <h2>Ihre Tischreservierung</h2>
+  
     <form action="#" method="post">
-    <section>
+    <section class="antik-karte">
       <fieldset>
         <legend><b>Ihre Daten für die Anmeldung und Rückfragen</b></legend>
         <label for="vorname">Vorname</label><br>
-        <input type="text" id="vorname" name="vorname" required><br>
+        <input required type="text" id="vorname" name="vorname" placeholder="Max"><br>
 
         <label for="nachname">Nachname</label><br>
-        <input type="text" id="nachname" name="nachname" required><br>
+        <input required type="text" id="nachname" name="nachname" placeholder="Mustermann"><br>
 
         <label for="email">E-Mail</label><br>
-        <input type="email" id="email" name="email" required><br>
+        <input required type="email" id="email" name="email" placeholder="muster@email.de"><br>
 
         <label for="telefon">Telefon</label><br>
-        <input type="tel" id="telefon" name="telefon" required><br>
+        <input required type="tel" id="telefon" name="telefon" placeholder="123456789"><br>
       </fieldset>
     </section>
     <br>
-    <section>
+    <section class="antik-karte">
       <fieldset>
         <legend><b>Ihre verbindliche Reservierung für:</b></legend>
 
@@ -115,7 +76,7 @@
       </fieldset>
     </section>
 
-    <section>
+    <section class="antik-karte">
       <fieldset>
         <legend><p><b>Event</b></p></legend>
         <input type="radio" id="spargel" name="event" value="Spargelessen" required>
@@ -129,7 +90,7 @@
       </fieldset>
     </section>
       <br>
-    <section>
+    <section class="antik-karte">
       <fieldset>
         <legend><b>Was dürfen wir zusätzlich vorab für Sie bereitstellen</b></legend>
 
@@ -150,7 +111,7 @@
       </fieldset>
     </section>
       <br>
-    <section>
+    <section class="antik-karte">
       <fieldset>
         <legend><b>Möchten Sie uns sonst noch auf etwas hinweisen</b></legend>
         <label for="allergien">Gibt es Unverträglichkeiten? Allergien?</label><br>
@@ -158,7 +119,7 @@
       </fieldset>
     </section>
       <br>
-    <section>
+    <section class="antik-karte">
       <fieldset>
         <legend><b>Rechtliches</b></legend>
         <input type="checkbox" id="agb" name="agb" required>
@@ -172,9 +133,11 @@
       <button type="submit">Reservierung absenden</button>
     </form>
   </main>
-  <hr>
+
     <!-- Footer -->
   <footer>
+    <p>Dienstags- Sonntags 17 - 22 Uhr</p>
+    <p>Montags Ruhetag</p>
     <p>&copy;Zum Goldenen Hirsch 1952. Alle Rechte vorbehalten.</p>
   </footer>
     

@@ -4,100 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speisekarte</title>
-<!-- Horizontale Nav-Bar -->
+    <link rel="stylesheet" href="style.css">
       <style>
-    /* Styling der Navigation */
-    nav {
-      background-color: #333;
-      padding: 10px;
-    }
 
-    nav ul {
-      list-style-type: none; /* Entfernt die Aufzählungszeichen */
-      margin: 0;
-      padding: 0;
-      display: flex; /* Elemente horizontal anordnen */
-    }
-
-    nav ul li {
-      margin-right: 20px; /* Abstand zwischen den Links */
-    }
-
-    nav ul li a {
-      text-decoration: none; /* Entfernt die Unterstreichung */
-      color: white;
-      font-weight: bold;
-      padding: 5px 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #575757; /* Hover-Effekt */
-      border-radius: 5px;
-    }
-
-    header {
-    padding: 20px;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    width: 150px;
-    height: auto;
-}
-/* Styling der Menükarte */
-.gericht-box {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  .gericht-bild {
-    width: 150px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.5rem;
-  }
-
-  .gericht-text {
-    flex: 1;
-  }
-
-  .gericht-text h3 {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-  }
-
-  .gericht-text h5 {
-    margin: 0.3rem 0;
-    color: #444;
-  }
-
-  .gericht-text h6 {
-    margin: 0;
-    font-weight: normal;
-    color: #888;
-  }
   </style>
 </head>
 <body>
+  <div class="page-grid">
         <!-- Kopfbereich -->
     <header>
+      <section class="antik-karte">
       <div class="header-top">
-        <h1>Willkommen bei "Zum Goldenen Hirsch"</h1>
+        <h1>Zum Goldenen Hirsch</h1>
         <img src="./static/images/goldenerhirschMN.jpg" width="150" alt="Logo" class="logo">
         </div>
-        <p>~Ihr Restaurant in gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
+        <p>~Ihr Restaurant mit gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
         <nav area-label="Hauptnavigation">
             <ul>
                 <li><a href="index.html" >Home</a></li>
-                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="ueber-uns.html">Historie</a></li>
                 <li><a href="speisekarte.html" aria-current="page">Speisekarte</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
@@ -105,22 +30,24 @@
                 
             </ul>
         </nav>
+        </section>
+        </div>
     </header>
 
     <!-- Hauptbereich/Inhalt -->
       <main>
       
-    <section class="vorspeisen">
+    <section class="antik-karte">
       <br><br>
       <fieldset class="Unsere Vorspeisen-Karte">
-          <h2>Unsere Vorspeisen-Karte</h2>
+          <h2>Auszug Vorspeisen-Karte</h2>
 
         <fieldset>
         <legend><b> #10</b></legend>
                    <div class="gericht-box">
             <img src="static/images/GHBruscette.jpg" width=150 alt="Tomaten-Bruscette" class="gericht-bild">
             <div class="gericht-text">  
-            <h3>Tomaten-Bruscette <span class="preis"> 7,90€</span></h3>
+            <h3>Tomaten-Bruscette<span class="preis"> 7,90€</span></h3>
             <h5>Tomaten-Ragout auf geröstetem Ciabatta-Baguettes, 3 Stck.</h5>
             <h6>A, G</h6>
             </div>
@@ -166,10 +93,10 @@
     </section>
     </fieldset>
 
-<section class="hauptpeisen">
+<section class="antik-karte">
       <br><br>
       <fieldset class="Unsere Haupt-Menüs">
-          <h2>Unsere Haupt-Menüs</h2>
+          <h2>Auszug Haupt-Menüs</h2>
 
       <fieldset>
         <legend><b>#20</b></legend>
@@ -243,11 +170,13 @@
   </table>
 </section>
   </main>
-  <hr>
+
 
     <!-- Footer -->
   <footer>
-    <p>&copy;Zum Goldenen Hirsch. Alle Rechte vorbehalten.</p>
+    <p>Dienstags- Sonntags 17 - 22 Uhr</p>
+    <p>Montags Ruhetag</p>
+    <p>&copy;Zum Goldenen Hirsch 1952. Alle Rechte vorbehalten.</p>
   </footer>
     
     

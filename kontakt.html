@@ -4,66 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
-<!-- Horizontale Nav-Bar -->
-      <style>
-    /* Styling der Navigation */
-    nav {
-      background-color: #333;
-      padding: 10px;
-    }
-
-    nav ul {
-      list-style-type: none; /* Entfernt die Aufzählungszeichen */
-      margin: 0;
-      padding: 0;
-      display: flex; /* Elemente horizontal anordnen */
-    }
-
-    nav ul li {
-      margin-right: 20px; /* Abstand zwischen den Links */
-    }
-
-    nav ul li a {
-      text-decoration: none; /* Entfernt die Unterstreichung */
-      color: white;
-      font-weight: bold;
-      padding: 5px 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #575757; /* Hover-Effekt */
-      border-radius: 5px;
-    }
-
-    header {
-    padding: 20px;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    width: 150px;
-    height: auto;
-}
-  </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="page-grid">
         <!-- Kopfbereich -->
     <header>
+       <section class="antik-karte">
       <div class="header-top">
-        <h1>Willkommen bei "Zum Goldenen Hirsch" </h1>
+        <h1>Zum Goldenen Hirsch</h1>
         <img src="./static/images/goldenerhirschMN.jpg" width="150" alt="Logo" class="logo">
         </div>
-        <p>~Ihr Restaurant in gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
+        <p>~Ihr Restaurant mit gemütlicher Atmosphäre. Traditionelle Küche seit 1952~</p>
         <nav area-label="Hauptnavigation">
             <ul>
                 <li><a href="index.html" >Home</a></li>
-                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="ueber-uns.html">Historie</a></li>
                 <li><a href="speisekarte.html">Speisekarte</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
@@ -71,11 +28,13 @@
                 
             </ul>
         </nav>
+        </section>
+        </div>
     </header>
     
     <!-- FORMULAR/ Hauptbereich -->
      <main>
-        <section>
+        <section class="antik-karte">
     <h2>Kontaktformular</h2>
     <form action="#" method="post">
         <fieldset>
@@ -91,9 +50,9 @@
             
             <!-- <label for="request-type">Anfragewunsch:</label>
             <input required type="radio" name="request-type" id="request-type" "><br><br> -->
-            <label for="request-type">Deine Nachricht an uns</label>
+            <label for="request-type">Ihre Nachricht an uns</label>
             <select name="request-type" id="request-type">
-                <option value="">Bitte wähle deine Option</option>
+                <option value="">Bitte wählen Sie Ihre Option</option>
                 <option value="anfrage">Anfrage</option>
                 <option value="event">Event</option>
                 <option value="wuensche">Wünsche/Lob/Kritik</option>
@@ -102,7 +61,7 @@
         </fieldset>
         <fieldset>
             <legend><b>Nachricht</b></legend>
-            <label for="message">Deine Nachricht an uns:</label><br>
+            <label for="message">Ihre Nachricht an uns:</label><br>
             <textarea name="message" id="message" rows="4" cols="50"></textarea><br><br>   
         </fieldset>
         <br>
@@ -113,9 +72,10 @@
 
       <!-- Footer -->
   <footer>
+    <p>Dienstags- Sonntags 17 - 22 Uhr</p>
+    <p>Montags Ruhetag</p>
     <p>&copy;Zum Goldenen Hirsch 1952. Alle Rechte vorbehalten.</p>
   </footer>
-    
 
 </body>
 
