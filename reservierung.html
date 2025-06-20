@@ -42,16 +42,16 @@
       <fieldset>
         <legend><b>Ihre Daten für die Anmeldung und Rückfragen</b></legend>
         <label for="vorname">Vorname</label><br>
-        <input required type="text" id="vorname" name="vorname" placeholder="Max"><br>
+        <input required type="text" id="vorname" name="vorname" placeholder="Max">
 
         <label for="nachname">Nachname</label><br>
-        <input required type="text" id="nachname" name="nachname" placeholder="Mustermann"><br>
+        <input required type="text" id="nachname" name="nachname" placeholder="Mustermann">
 
         <label for="email">E-Mail</label><br>
-        <input required type="email" id="email" name="email" placeholder="muster@email.de"><br>
+        <input required type="email" id="email" name="email" placeholder="muster@email.de">
 
         <label for="telefon">Telefon</label><br>
-        <input required type="tel" id="telefon" name="telefon" placeholder="123456789"><br>
+        <input required type="tel" id="telefon" name="telefon" placeholder="123456789">
       </fieldset>
     </section>
     <br>
@@ -60,9 +60,9 @@
         <legend><b>Ihre verbindliche Reservierung für:</b></legend>
 
         <label for="datum">Datum</label><br>
-        <input type="date" id="datum" name="datum" min="2025-06-16" required><br>
+        <input type="date" id="datum" name="datum" min="2025-06-16" required>
 
-        <label for="uhrzeit">Uhrzeit</label><br>
+        <label for="uhrzeit">Uhrzeit</label>
         <select id="uhrzeit" name="uhrzeit" required>
             <option value="17:00">17:00</option>
             <option value="18:00">18:00</option>
@@ -71,7 +71,7 @@
             <option value="21:00">21:00</option>          
         </select><br>
         <label for="personen">Personenzahl</label><br>
-        <input type="number" id="personen" name="personen" min="1" max="10" required><br>
+        <input type="number" id="personen" name="personen" min="1" max="10" required>
         <p>*Hinweis: Da es unser Anliegen ist, dass Sie unsere Speisen mit ausreichend Zeit genießen können, nehmen wir nur Reservierungen bis 21 Uhr entgegen.</p>
       </fieldset>
     </section>
@@ -80,37 +80,49 @@
       <fieldset>
         <legend><p><b>Event</b></p></legend>
         <input type="radio" id="spargel" name="event" value="Spargelessen" required>
-        <label for="spargel">Spargelessen</label><br>
+        <label for="spargel">Spargelessen</label>
         <input type="radio" id="aal" name="event" value="Aalessen">
-        <label for="aal">Aalessen</label><br>
+        <label for="aal">Aalessen</label>
         <input type="radio" id="gruenkohl" name="event" value="Grünkohlessen">
-        <label for="gruenkohl">Grünkohlessen</label><br>
+        <label for="gruenkohl">Grünkohlessen</label>
         <input type="radio" id="anderer" name="event" value="Anderer Anlass">
-        <label for="anderer">Anderer Anlass</label><br>
+        <label for="anderer">Anderer Anlass</label>
       </fieldset>
     </section>
       <br>
     <section class="antik-karte">
-      <fieldset>
-        <legend><b>Was dürfen wir zusätzlich vorab für Sie bereitstellen</b></legend>
+  <fieldset>
+    <legend><b>Was dürfen wir zusätzlich für Sie bereitstellen</b></legend>
 
+    <div class="form-option">
+      <div>
         <input type="checkbox" id="kinderstuhl" name="preferences[]" value="Kinderstuhl">
-        <label for="kinderstuhl">Kinderstuhl</label><br>
+        <label for="kinderstuhl">Kinderstuhl</label>
+      </div>
 
+      <div>
         <input type="checkbox" id="ruhig" name="preferences[]" value="Ruhig">
-        <label for="ruhig">Ruhiger Bereich</label><br>
+        <label for="ruhig">Ruhiger Bereich</label>
+      </div>
 
+      <div>
         <input type="checkbox" id="barrierefrei" name="preferences[]" value="Barreierefrei/Rollstuhlgerecht">
-        <label for="barrierefrei">Barrierefrei/Rollstuhlgerecht</label><br>
+        <label for="barrierefrei">Barrierefrei/Rollstuhlgerecht</label>
+      </div>
 
+      <div>
         <input type="checkbox" id="blindengerecht" name="preferences[]" value="Blindengerechte Speisekarte">
-        <label for="blindengerecht">Blindengerechte Speisekarte</label><br>
-        
+        <label for="blindengerecht">Blindengerechte Speisekarte</label>
+      </div>
+
+      <div>
         <input type="checkbox" id="hundeecke" name="preferences[]" value="Hundeecke">
-        <label for="hundeecke">Hundeecke</label><br>
-      </fieldset>
+        <label for="hundeecke">Hundeecke</label>
+      </div>
+    </div>
+  </fieldset>
     </section>
-      <br>
+      
     <section class="antik-karte">
       <fieldset>
         <legend><b>Möchten Sie uns sonst noch auf etwas hinweisen</b></legend>

@@ -40,8 +40,9 @@ nav {
   border-radius: 10px; /* Rundet alle Ecken gleichmäßig ab */
 }
 
-h1 {
-  font-size: 2em;
+h1, p {
+  margin-top: 0;
+  margin-bottom: 1.0rem; /* je nach Wunsch */
 }
 
 
@@ -158,6 +159,51 @@ flex-wrap: wrap; /* Erlaubt Karten, in die nächste Zeile zu springen */
   color: #888;
   font-weight: normal;
 }
+/* ----Absätze Kontakt----- */
+input {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+/* ----Radio-Buttons und Formular Checkboxen */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+/* .form-option { */
+/* display: flex; */
+/* flex-direction: column; Checkboxen untereinander */
+/* gap: 0.6rem; */
+/* margin-top: 1rem; */
+/* } */
+
+/* .form-option label { */
+/* margin-left: 0.4rem; */
+/* font-size: 1rem; */
+/* color: #4b3e2d; */
+/* } */
+/* Optional: Checkbox und Label nebeneinander zentriert */
+/* .form-option input[type="checkbox"] { */
+/* transform: scale(1.2); */
+/* vertical-align: middle; */
+/* } */
+
+/* .form-option { */
+/* display: grid; */
+/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+/* gap: 1rem; */
+/* margin-top: 1rem; */
+/* } */
+
+.form-option {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
 
 /* Styling Menükarte Text */
     .hauptspeisen {
@@ -297,10 +343,10 @@ flex-wrap: wrap; /* Erlaubt Karten, in die nächste Zeile zu springen */
 .page-grid {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  gap: 30px;
-  padding: 20px;
+  gap: 10px;
+  padding: 10px;
   background: none;
-  min-height: 100vh;
+  min-height: auto;
 }
 
         /* Stil für antike Karte */

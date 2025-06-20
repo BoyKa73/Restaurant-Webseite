@@ -40,16 +40,19 @@
         <fieldset>
             <legend><b>Persönliche Daten</b></legend>
             <label for="name">Name:</label>
-            <input required type="text" name="name" id="name" placeholder="Max Mustermann" ><br><br>
+            <input required type="text" name="name" id="name" placeholder="Max Mustermann" >
             
             <label for="email">Email:</label>
-            <input required type="email" name="email" id="email" placeholder="max@mustermann.de"><br><br>
+            <input required type="email" name="email" id="email" placeholder="max@mustermann.de">
             
             <label for="phone">TelNr:</label>
-            <input required type="tel" name="phone" id="phone" placeholder="+40 (0)123 4567"><br><br>
+            <input required type="tel" name="phone" id="phone" placeholder="+40 (0)123 4567">
             
+        </fieldset>
+        <fieldset>
             <!-- <label for="request-type">Anfragewunsch:</label>
             <input required type="radio" name="request-type" id="request-type" "><br><br> -->
+            <legend><b>Nachricht</b></legend>
             <label for="request-type">Ihre Nachricht an uns</label>
             <select name="request-type" id="request-type">
                 <option value="">Bitte wählen Sie Ihre Option</option>
@@ -58,11 +61,7 @@
                 <option value="wuensche">Wünsche/Lob/Kritik</option>
                 <option value="sonstiges">Sonstiges</option>
             </select>
-        </fieldset>
-        <fieldset>
-            <legend><b>Nachricht</b></legend>
-            <label for="message">Ihre Nachricht an uns:</label><br>
-            <textarea name="message" id="message" rows="4" cols="50"></textarea><br><br>   
+            <textarea name="message" id="message" rows="4" cols="50"></textarea>   
         </fieldset>
         <br>
         <input type="submit" value="Absenden">
