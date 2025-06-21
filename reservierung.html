@@ -40,7 +40,7 @@
     <form action="#" method="post">
     <section class="antik-karte">
       <fieldset>
-        <legend><b>Ihre Daten für die Anmeldung und Rückfragen</b></legend>
+        <legend><b>Ihre Daten für die Anmeldung :</b></legend>
         <label for="vorname">Vorname</label><br>
         <input required type="text" id="vorname" name="vorname" placeholder="Max">
 
@@ -54,15 +54,15 @@
         <input required type="tel" id="telefon" name="telefon" placeholder="123456789">
       </fieldset>
     </section>
-    <br>
+    
     <section class="antik-karte">
       <fieldset>
-        <legend><b>Ihre verbindliche Reservierung für:</b></legend>
+        <legend><b>Ihre verbindliche Reservierung für :</b></legend>
 
         <label for="datum">Datum</label><br>
         <input type="date" id="datum" name="datum" min="2025-06-16" required>
 
-        <label for="uhrzeit">Uhrzeit</label>
+        <label for="uhrzeit">Uhrzeit</label><br>
         <select id="uhrzeit" name="uhrzeit" required>
             <option value="17:00">17:00</option>
             <option value="18:00">18:00</option>
@@ -76,52 +76,66 @@
       </fieldset>
     </section>
 
-    <section class="antik-karte">
-      <fieldset>
-        <legend><p><b>Event</b></p></legend>
-        <input type="radio" id="spargel" name="event" value="Spargelessen" required>
-        <label for="spargel">Spargelessen</label>
+<section class="antik-karte">
+  <fieldset>
+    <legend><b>Event :</b></legend>
+    <div class="radio-group">
+      <label>
+        <input type="radio" id="spargel" name="event" value="Spargelessen">
+        Spargelessen
+      </label>
+
+      <label>
         <input type="radio" id="aal" name="event" value="Aalessen">
-        <label for="aal">Aalessen</label>
+        Aalessen
+      </label>
+
+      <label>
         <input type="radio" id="gruenkohl" name="event" value="Grünkohlessen">
-        <label for="gruenkohl">Grünkohlessen</label>
+        Grünkohlessen
+      </label>
+
+      <label>
         <input type="radio" id="anderer" name="event" value="Anderer Anlass">
-        <label for="anderer">Anderer Anlass</label>
-      </fieldset>
-    </section>
-      <br>
+        Anderer Anlass
+      </label>
+    </div>
+  </fieldset>
+</section>
+
+    
     <section class="antik-karte">
   <fieldset>
     <legend><b>Was dürfen wir zusätzlich für Sie bereitstellen</b></legend>
 
     <div class="form-option">
-      <div>
+      <label>
         <input type="checkbox" id="kinderstuhl" name="preferences[]" value="Kinderstuhl">
-        <label for="kinderstuhl">Kinderstuhl</label>
-      </div>
+        Kinderstuhl
+      </label>
 
-      <div>
+      <label>
         <input type="checkbox" id="ruhig" name="preferences[]" value="Ruhig">
-        <label for="ruhig">Ruhiger Bereich</label>
-      </div>
+        Ruhiger Bereich
+      </label>
 
-      <div>
+      <label>
         <input type="checkbox" id="barrierefrei" name="preferences[]" value="Barreierefrei/Rollstuhlgerecht">
-        <label for="barrierefrei">Barrierefrei/Rollstuhlgerecht</label>
-      </div>
+        Barrierefrei/Rollstuhlgerecht
+      </label>
 
-      <div>
+      <label>
         <input type="checkbox" id="blindengerecht" name="preferences[]" value="Blindengerechte Speisekarte">
-        <label for="blindengerecht">Blindengerechte Speisekarte</label>
-      </div>
+        Blindengerechte Speisekarte
+      </label>
 
-      <div>
+      <label>
         <input type="checkbox" id="hundeecke" name="preferences[]" value="Hundeecke">
-        <label for="hundeecke">Hundeecke</label>
-      </div>
+        Hundeecke
+      </label>
     </div>
   </fieldset>
-    </section>
+</section>
       
     <section class="antik-karte">
       <fieldset>
@@ -130,19 +144,26 @@
         <textarea id="allergien" name="allergien" placeholder="z.B.: ich bin Diabetiker , Weizenunverträglich, Nussallergiker, habe eine Glutenunverträglichkeit.. "></textarea><br>
       </fieldset>
     </section>
-      <br>
-    <section class="antik-karte">
-      <fieldset>
-        <legend><b>Rechtliches</b></legend>
-        <input type="checkbox" id="agb" name="agb" required>
-        <label for="agb">Ich akzeptiere die AGB*</label><br>
+      
+<section class="antik-karte">
+  <fieldset>
+    <legend><b>Rechtliches</b></legend>
+    <div class="form-option">
+      <label>
+        <input required type="checkbox" id="agb" name="agb" value="Ich akzeptiere die AGB">
+        Ich akzeptiere die AGB*
+      </label>
+      <label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="Newsletter">
+        Ich möchte den Newsletter erhalten
+      </label>
+    </div>
+  </fieldset>
+</section>
 
-        <input type="checkbox" id="newsletter" name="newsletter">
-        <label for="newsletter">Ich möchte den Newsletter erhalten</label><br>
-      </fieldset>
-    </section>
-      <br>
+      <div style="text-align: center; margin: 1.5rem 0;">
       <button type="submit">Reservierung absenden</button>
+      </div>
     </form>
   </main>
 

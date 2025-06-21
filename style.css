@@ -1,50 +1,56 @@
-/* <!-- Horizontale Nav-Bar --> */
-
-    /* Styling der Navigation */
-    nav {
-      background-color: #333;
-      padding: 10px;
-    }
-
-    nav ul {
-      list-style-type: none; /* Entfernt die Aufzählungszeichen */
-      margin: 0;
-      padding: 0;
-      display: flex; /* Elemente horizontal anordnen */
-    }
-
-    nav ul li {
-      margin-right: 20px; /* Abstand zwischen den Links */
-    }
-
-    nav ul li a {
-      text-decoration: none; /* Entfernt die Unterstreichung */
-      color: white;
-      font-weight: bold;
-      padding: 5px 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #575757; /* Hover-Effekt */
-      border-radius: 5px;
-    }
-
-    header {
-    padding: 20px;
+:root {
+    --farbe-akzent: #b48c4a;
+    --farbe-text-dunkel: #444;
+    --farbe-text-hell: #888;
+    --schrift-standard: "Segoe UI", sans-serif;
 }
+
+/* ---------- Grundlayout ---------- */
+body {
+    font-family: var(--schrift-standard);
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Header und Navigation ---------- */
+header {
+    padding: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+
 
 nav {
-  background-color: #333;
-  padding: 10px;
-  border-radius: 10px; /* Rundet alle Ecken gleichmäßig ab */
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-h1, p {
-  margin-top: 0;
-  margin-bottom: 1.0rem; /* je nach Wunsch */
+nav ul,
+.main-nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* optionaler Schatten-Effekt */
+}
 
 .header-top {
     display: flex;
@@ -57,325 +63,302 @@ h1, p {
     height: auto;
 }
 
-.main-nav-list {
-  display: flex;             /* Elemente in eine Reihe anordnen */
-  list-style: none;          /* Aufzählungszeichen entfernen */
-  padding: 0;                /* Standard-Abstand entfernen */
-  margin: 0;                 /* Ggf. auch Außenabstand entfernen */
-  gap: 20px;                 /* Abstand zwischen den Elementen */
-  justify-content: center;   /* Elemente zentrieren (alternativ: space-between) */
-  align-items: center;       /* Vertikale Zentrierung (optional) */
+a {
+  color: inherit;         /* übernimmt die aktuelle Textfarbe */
+  text-decoration: none;  /* entfernt Unterstreichung */
+  font-weight: bold;      /* optional, für bessere Sichtbarkeit */
+}
+
+a:hover {
+  text-decoration: none;  /* optional, zeigt bei Hover an, dass es ein Link ist */
+}
+
+.inline-link {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.inline-link:hover {
+  color: #c39b6b;
+  background-color: rgba(195, 155, 107, 0.1);
+  border-radius: 4px;
 }
 
 
-/* Styling der Karten */
-.card-container {
-display: flex;
-gap: 16px; /* Abstand zwischen den Karten */
-flex-wrap: wrap; /* Erlaubt Karten, in die nächste Zeile zu springen */
+/* ---------- Überschriften und Texte ---------- */
+h1,
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
-/* ------ Allg.Styling Feature-Sektion----- */
+/* ---------- Feature-Sektion & Karten ---------- */
 .features-section {
-  padding: 40px 20px;
-  background-color: none; 
+    padding: 40px 20px;
+    background-color: transparent;
+    text-align: center;
 }
 
 .features-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-/* ------Layout für die Karten----- */
 .card-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap; /* Damit es auch auf kleinen Bildschirmen gut aussieht */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-/* ----- Styling einzelne Karte ----- */
 .card {
-  background-color: none;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(221, 221, 221, 0.1);
-  text-align: center;
-  width: 150px; /* Feste Breite für gleichmäßige Karten */
-  transition: transform 0.3s ease;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(221, 221, 221, 0.1);
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Schwebender Effekt beim Hover */
-  box-shadow: 0 8px 16px rgba(203, 211, 199, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(203, 211, 199, 0.2);
 }
 
-/* ------ Icon-Größe anpassen ----- */
 .card h3:first-child {
-  font-size: 40px;
-  margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-/* Styling der Menükarte */
+/* ---------- Menükarte ---------- */
+.hauptspeisen {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.gericht {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  /* Kein border-bottom mehr hier, um Querstrich in Karte zu vermeiden */
+}
+
 .gericht-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 .gericht-bild {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 0.4rem;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .gericht-text {
-  flex: 1;
+    flex: 1;
 }
 
 .gericht-text h3 {
-  margin: 0;
-  font-size: 1.1rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.preis {
-  font-weight: bold !important;
-  color: #555;              /* Klar lesbar */
-  margin-left: 1rem;
-  /* font-size: 1.1rem;        Optional größer */
+    margin: 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .gericht-text h5 {
-  margin: 0.5rem 0;
-  color: #444;
+    margin: 0.5rem 0;
+    color: var(--farbe-text-dunkel);
+}
+
+h5 {
+    font-weight: normal;
 }
 
 .gericht-text h6 {
-  margin: 0;
-  color: #888;
-  font-weight: normal;
-}
-/* ----Absätze Kontakt----- */
-input {
-  display: block;
-  margin-bottom: 0.8rem;
+    margin: 0;
+    color: #888;
+    font-weight: normal;
+    font-size: 0.9rem;
+    font-family: sans-serif;
 }
 
-/* ----Radio-Buttons und Formular Checkboxen */
+.preis {
+    font-weight: bold;
+    color: #555;
+    margin-left: 1rem;
+}
+
+/* -----------Allergen-Legenden-Design--------- */
+
+/* .allergen-legende table { */
+    /* border-collapse: collapse; */
+    /* border: none; */
+    /* font-family: inherit; */
+    /* font-size: inherit; */
+    /* color: inherit; */
+/* } */
+
+/* .allergen-legende td { */
+    /* padding: 6px 12px; */
+    /* vertical-align: top; */
+/* } */
+
+.allergen-legende {
+  margin-top: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #333;
+}
+
+.allergen-legende h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.allergen-legende table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.allergen-legende td {
+  padding: 6px 12px;
+  vertical-align: top;
+  color: #333;
+}
+
+.allergen-legende td strong {
+  display: inline-block;
+  width: 24px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* ---------- Formular ---------- */
+input {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
-  margin-right: 0.5rem;
+    margin-right: 0.5rem;
 }
 
-/* .form-option { */
-/* display: flex; */
-/* flex-direction: column; Checkboxen untereinander */
-/* gap: 0.6rem; */
-/* margin-top: 1rem; */
-/* } */
-
-/* .form-option label { */
-/* margin-left: 0.4rem; */
-/* font-size: 1rem; */
-/* color: #4b3e2d; */
-/* } */
-/* Optional: Checkbox und Label nebeneinander zentriert */
-/* .form-option input[type="checkbox"] { */
-/* transform: scale(1.2); */
-/* vertical-align: middle; */
-/* } */
-
-/* .form-option { */
-/* display: grid; */
-/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-/* gap: 1rem; */
-/* margin-top: 1rem; */
-/* } */
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 
 .form-option {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
+.form-option label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
-
-/* Styling Menükarte Text */
-    .hauptspeisen {
-      max-width: 800px;
-      margin: 0 auto ;
-      padding: 1rem;
-      font-family: "Segoe UI", sans-serif;
-    }
-
-    .gericht {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 2rem;
-      gap: 1rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 1rem;
-    }
-
-    .gericht-bild {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-
-    .gericht-text {
-      flex: 1;
-    }
-
-    .gericht-text h3 {
-      margin: 0;
-      font-size: 1.2rem;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .gericht-text .preis {
-      font-weight: normal;
-      margin-left: auto;
-      white-space: nowrap;
-      color: #555;
-    }
-
-    .gericht-text h5 {
-      margin: 0.3rem 0;
-      color: #444;
-    }
-
-    .gericht-text h6 {
-      margin: 0;
-      font-weight: normal;
-      color: #888;
-    }
-
-        /* Navigation */
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-
-    nav ul li {
-      margin-right: 20px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      padding: 5px 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #575757;
-      border-radius: 5px;
-    }
-
-    header {
-      padding: 20px;
-    }
-
-    .header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      width: 150px;
-      height: auto;
-    }
-
-    /* Timeline-Section */
-
+/* ---------- Über uns & Timeline ---------- */
 .ueber-uns {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-family: "Segoe UI", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .timeline {
-  border-left: 3px solid #b48c4a;
-  padding-left: 1.5rem;
-  margin-top: 2rem;
-  position: relative;
+    border-left: 3px solid var(--farbe-akzent);
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+    position: relative;
 }
 
 .timeline-item {
-  margin-bottom: 2rem;
-  position: relative;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
 .timeline-item::before {
-  content: "•";
-  position: absolute;
-  left: -1.2rem;
-  top: 0;
-  font-size: 1.5rem;
-  color: #b48c4a;
+    content: "•";
+    position: absolute;
+    left: -1.2rem;
+    top: 0;
+    font-size: 1.5rem;
+    color: var(--farbe-akzent);
 }
 
 .timeline h3 {
-  margin: 0 0 0.5rem;
-  color: #2c3e50;
+    margin: 0 0 0.5rem;
+    color: #2c3e50;
 }
 
 .timeline p {
-  margin: 0;
-  color: #444;
+    margin: 0;
+    color: var(--farbe-text-dunkel);
 }
 
+/* ---------- Antike Karte ---------- */
+.antik-karte {
+    background: linear-gradient(#f7f0c3, #e4d8a2);
+    color: #4b3e2d;
+    padding: 40px;
+    margin: 40px;
+    max-width: 800px;
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid #a48750;
+    border-radius: 20px;
+    position: relative;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+    background-image:
+     radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+     radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+/* ---------- Seitenlayout ---------- */
 .page-grid {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  gap: 10px;
-  padding: 10px;
-  background: none;
-  min-height: auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    padding: 10px;
+    background: none;
+    min-height: auto;
 }
 
-        /* Stil für antike Karte */
-    .antik-karte {
-      background: linear-gradient(#f7f0c3, #e4d8a2); /* Vergilbtes Papier */
-      color: #4b3e2d;
-      padding: 40px;
-      margin: 40px;
-      max-width: 800px;
-      font-family: 'Georgia', serif;
-      font-size: 1.2rem;
-      line-height: 1.8;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-      border: 1px solid #a48750;
-      border-radius: 20px;
-      position: relative;
-      clip-path: polygon(
-        10% 0%, 90% 0%, 100% 10%, 100% 90%,
-        90% 100%, 10% 100%, 0% 90%, 0% 10%
-      );
-      background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
-                        radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
-      background-size: 10px 10px;
-    }
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #888;
+    font-size: 0.85rem;
+    font-family: sans-serif;
+}
 
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      color: #888;
-    }
+/* ---------- Responsive Design ---------- */
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
 
-
+  .main-nav-list,
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
