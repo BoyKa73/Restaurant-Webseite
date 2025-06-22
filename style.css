@@ -115,7 +115,7 @@ p {
     background-color: transparent;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(221, 221, 221, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     text-align: center;
     width: 150px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -123,7 +123,7 @@ p {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(203, 211, 199, 0.2);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
 }
 
 .card h3:first-child {
